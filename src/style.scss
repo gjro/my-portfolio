@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+$text-color: #a5a5a5;
+$primary-default: #09ce35;
+$primary-light: #4c8c4a;
+$primary-dark: #003300;
+
+$background-1: #0e0e0e;
+$background-2: #171515;
+$background-3: #3d3b3b;
+
+$drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.5),
+	5px 5px 10px rgba(14, 14, 14, 0.25), -10px -10px 20px rgba(14, 14, 14, 0.5);
+
+$inner-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5),
+	inset 5px 5px 10px rgba(14, 14, 14, 0.25),
+	inset -10px -10px 20px rgba(14, 14, 14, 0.5), inset 10px 10px 20px #000000;
+
+$neon: 0px 0px 10px rgba(76, 140, 74, 0.5), 1px 1px 5px rgba(76, 140, 74, 0.25);
+
+.heading-14 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.heading-16 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.heading-20 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.heading-28 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.heading-32 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.heading-42 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 50px;
+}
+
+.heading-54 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 64px;
+}
+
+.paragraph {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.short-paragraph {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.long-paragraph {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-default;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+body {
+	background-color: $background-1;
+}
