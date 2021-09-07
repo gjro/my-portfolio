@@ -1,0 +1,36 @@
+@import "../../style.scss";
+
+.container {
+	text-align: center;
+	padding-top: 160px;
+	padding-bottom: 80px;
+}
+
+h1 {
+	color: $text-color;
+	margin: 0;
+}
+
+h2 {
+	color: $primary-default;
+	text-shadow: $neon;
+	margin: 0;
+}
+
+button {
+	margin-top: 40px;
+	border: none;
+	padding: 0;
+	height: 45px;
+	width: 240px;
+	border-radius: 8px;
+	background-color: $primary-dark;
+	box-shadow: $drop-shadow;
+	color: $text-color;
+	cursor: pointer;
+	transition: 1s;
+
+	&:hover {
+		box-shadow: $neon;
+	}
+}

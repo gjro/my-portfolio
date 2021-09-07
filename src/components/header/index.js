@@ -1,11 +1,12 @@
 import "./style.scss";
-
-import "../../assets/img/logo.png";
+import logo from "../../assets/img/logo.png";
 
 function Header() {
 	return (
 		<header>
-			<img src="../../assets/img/logo.png" alt="logo" />
+			<a href="">
+				<img src={logo} alt="logo" />
+			</a>
 			<nav className="menu">
 				<ul>
 					<li>
