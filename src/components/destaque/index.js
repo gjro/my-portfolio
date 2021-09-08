@@ -1,11 +1,11 @@
-import "./style.scss";
+import styles from "./style.module.scss";
 
 function Destaque() {
 	return (
-		<div className="container">
-			<h1 className="heading-54">Gilberto Junior</h1>
-			<h2 className="heading-32">Software Engineer</h2>
-			<button className="heading-14">Know my work</button>
+		<div className={styles.container}>
+			<h1 className={styles.title}>Gilberto Junior</h1>
+			<h2 className={styles.subtitle}>Software Engineer</h2>
+			<button className={styles.button}>Know my work</button>
 		</div>
 	);
 }

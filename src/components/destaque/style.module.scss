@@ -1,34 +1,35 @@
-@import "../../style.scss";
+@import "../../styles/global.scss";
 
 .container {
 	text-align: center;
-	padding-top: 160px;
-	padding-bottom: 80px;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 }
 
-h1 {
+.title {
 	color: $text-color;
-	margin: 0;
 }
 
-h2 {
+.subtitle {
 	color: $primary-default;
 	text-shadow: $neon;
-	margin: 0;
 }
 
-button {
-	margin-top: 40px;
+.button {
+	margin-top: 2.5rem;
 	border: none;
-	padding: 0;
-	height: 45px;
-	width: 240px;
-	border-radius: 8px;
+	height: 3rem;
+	width: 15rem;
+	border-radius: 0.5rem;
 	background-color: $primary-dark;
 	box-shadow: $drop-shadow;
 	color: $text-color;
 	cursor: pointer;
 	transition: 1s;
+
+	font-weight: 600;
+	font-size: 0.85rem;
+	line-height: 1.125rem;
 
 	&:hover {
 		box-shadow: $neon;

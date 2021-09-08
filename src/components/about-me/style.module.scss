@@ -1,0 +1,41 @@
+@import "../../styles/global.scss";
+
+.container {
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	display: flex;
+
+	p {
+		color: $text-color;
+		text-align: left;
+		width: 32rem;
+
+		font-weight: normal;
+		font-size: 0.85rem;
+		line-height: 1.25rem;
+	}
+}
+
+.subtitle {
+	color: $text-color;
+	text-align: left;
+}
+
+.left {
+	width: 50%;
+
+	img {
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+}
+
+.right {
+	margin-top: 2.5rem;
+	width: 50%;
+}

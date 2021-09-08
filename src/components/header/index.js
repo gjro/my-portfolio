@@ -1,13 +1,13 @@
-import "./style.scss";
+import styles from "./style.module.scss";
 import logo from "../../assets/img/logo.png";
 
 function Header() {
 	return (
-		<header>
+		<header className={styles.headerContainer}>
 			<a href="">
-				<img src={logo} alt="logo" />
+				<img className={styles.logo} src={logo} alt="logo" />
 			</a>
-			<nav className="menu">
+			<nav className={styles.menu}>
 				<ul>
 					<li>
 						<a href="#">About me</a>
@@ -19,7 +19,7 @@ function Header() {
 						<a href="#">Skills</a>
 					</li>
 					<li>
-						<a className="heading-14 contact" href="#">
+						<a className={styles.contact} href="#">
 							Contact
 						</a>
 					</li>
