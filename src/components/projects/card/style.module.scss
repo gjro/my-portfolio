@@ -1,0 +1,60 @@
+@import "../../../styles/global.scss";
+
+.card {
+	background-color: $background-2;
+	height: 18.125rem;
+	width: 18.125rem;
+	padding: 1rem;
+	border-radius: 0.625rem;
+	box-shadow: $drop-shadow;
+	margin: 1.875rem 2.5rem;
+
+	.icons {
+		width: 100%;
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.icon {
+		margin-left: 1rem;
+		cursor: pointer;
+	}
+
+	.body {
+		margin: 2.25rem 0;
+		h3 {
+			margin-bottom: 1.5rem;
+			color: $text-color;
+
+			transition: 1s;
+			cursor: pointer;
+			&:hover {
+				color: $primary-default;
+				text-shadow: $neon;
+			}
+		}
+
+		p {
+			color: $text-color;
+
+			font-weight: normal;
+			font-size: 0.85rem;
+			line-height: 1.25rem;
+		}
+	}
+
+	.footer {
+		width: 100%;
+		display: inline-flex;
+		justify-content: space-around;
+		span {
+			color: $primary-default;
+			transition: 1s;
+			&:hover {
+				text-shadow: $neon;
+			}
+			cursor: pointer;
+		}
+	}
+}

@@ -1,39 +1,57 @@
 import styles from "./style.module.scss";
-import archive from "../../assets/img/archive-icon.png";
-import github from "../../assets/img/github-icon.svg";
-import extern from "../../assets/img/extern-icon.svg";
+import Card from "./card";
+
 function Projects() {
 	return (
 		<div className={styles.projectsContainer}>
 			<h2 className={styles.subtitle}>Projects</h2>
 			<hr />
-
-			<div className={styles.card}>
-				<div className={styles.icons}>
-					<div>
-						<img src={archive} alt="archive-icon" />
-					</div>
-					<div>
-						<img
-							className={styles.fill}
-							src={github}
-							alt="github-icon"
-						/>
-						<img
-							className={styles.fill}
-							src={extern}
-							alt="extern-icon"
-						/>
-					</div>
-				</div>
-				<div>
-					<h3>Site de coisa legal</h3>
-					<p></p>
-				</div>
-				<div>
-					<span>oi</span>
-					<span>oi</span>
-				</div>
+			<div className={styles.cardsContainer}>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+				<Card
+					title="Site legal"
+					body="Informações sobre o app legal formações sobre o app legal Informações sobre osdfsdfsfsdf app legal Informações sobre o app legal"
+					tec1="Tecnologia 1"
+					tec2="Tecnologia 2"
+					tec3="Tecnologia 3"
+				/>
+			</div>
+			<div className={styles.buttonContainer}>
+				<button className={styles.button}>Show more</button>
 			</div>
 		</div>
 	);

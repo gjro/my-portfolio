@@ -14,24 +14,34 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-}
 
-.card {
-	background-color: $background-2;
-	height: 18.125rem;
-	width: 18.125rem;
-	padding: 1rem;
-	border-radius: 0.625rem;
-	box-shadow: $drop-shadow;
-
-	.icons {
-		width: 100%;
-		display: inline-flex;
-		align-items: flex-start;
-		justify-content: space-between;
+	.cardsContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
-	.fill {
-		filter: drop-shadow($neon);
+	.buttonContainer {
+		text-align: center;
+
+		.button {
+			border: none;
+			height: 3rem;
+			width: 15rem;
+			border-radius: 0.5rem;
+			background-color: $primary-dark;
+			box-shadow: $drop-shadow;
+			color: $text-color;
+			cursor: pointer;
+			transition: 1s;
+
+			font-weight: 600;
+			font-size: 0.85rem;
+			line-height: 1.125rem;
+
+			&:hover {
+				box-shadow: $neon;
+			}
+		}
 	}
 }
