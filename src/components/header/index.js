@@ -1,11 +1,11 @@
 import styles from "./style.module.scss";
-import logo from "../../assets/img/logo.png";
+import Logo from "../../iconComponents/LogoIcon";
 
 function Header() {
 	return (
 		<header className={styles.headerContainer}>
 			<a href="">
-				<img className={styles.logo} src={logo} alt="logo" />
+				<Logo className={styles.logo} />
 			</a>
 			<nav className={styles.menu}>
 				<ul>

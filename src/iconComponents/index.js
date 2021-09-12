@@ -1,0 +1,5 @@
+export { default as ArchiveIcon } from './ArchiveIcon'
+export { default as ExternIcon } from './ExternIcon'
+export { default as GithubIcon } from './GithubIcon'
+export { default as JavascriptIcon } from './JavascriptIcon'
+export { default as LogoIcon } from './LogoIcon'

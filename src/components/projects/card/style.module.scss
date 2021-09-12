@@ -7,7 +7,7 @@
 	padding: 1rem;
 	border-radius: 0.625rem;
 	box-shadow: $drop-shadow;
-	margin: 1.875rem 2.5rem;
+	margin: 1.5rem 2rem;
 
 	.icons {
 		width: 100%;
@@ -19,6 +19,15 @@
 	.icon {
 		margin-left: 1rem;
 		cursor: pointer;
+		color: $text-color;
+		width: 1.563rem;
+		height: 1.563rem;
+
+		transition: 1s;
+		&:hover {
+			color: $primary-default;
+			filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+		}
 	}
 
 	.body {

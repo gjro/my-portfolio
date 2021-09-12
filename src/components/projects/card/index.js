@@ -1,25 +1,18 @@
+import React from "react";
 import styles from "./style.module.scss";
-import archive from "../../../assets/img/archive-icon.png";
-import github from "../../../assets/img/github-icon.svg";
-import extern from "../../../assets/img/extern-icon.svg";
+import Archive from "../../../iconComponents/ArchiveIcon";
+import Github from "../../../iconComponents/GithubIcon";
+import Exern from "../../../iconComponents/ExternIcon";
 function Card(props) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.icons}>
 				<div>
-					<img src={archive} alt="archive-icon" />
+					<Archive width="3.75rem" height="3.438rem" />
 				</div>
 				<div>
-					<img
-						className={styles.icon}
-						src={github}
-						alt="github-icon"
-					/>
-					<img
-						className={styles.icon}
-						src={extern}
-						alt="extern-icon"
-					/>
+					<Github className={styles.icon} />
+					<Exern className={styles.icon} />
 				</div>
 			</div>
 			<div className={styles.body}>

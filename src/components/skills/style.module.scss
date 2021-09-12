@@ -1,6 +1,6 @@
 @import "../../styles/global.scss";
 
-.projectsContainer {
+.skillsContainer {
 	width: 100%;
 	padding: 5rem 0;
 	align-items: center;
@@ -16,6 +16,7 @@
 	}
 
 	.cardsContainer {
+		margin-top: 5rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;

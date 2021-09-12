@@ -1,0 +1,126 @@
+@import "../../../styles/global.scss";
+
+.card {
+	background-color: $background-2;
+	height: 16rem;
+	width: 15rem;
+	padding: 1rem;
+	border-radius: 0.625rem;
+	box-shadow: $drop-shadow;
+	margin: 3rem 1rem;
+
+	.iconContainer {
+		width: 7.8rem;
+		height: 7.8rem;
+		bottom: 5rem;
+		border-radius: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		background-color: $background-2;
+		box-shadow: $inner-shadow;
+
+		.icon {
+			width: 6.4rem;
+			height: 6.4rem;
+			border-radius: 4rem;
+			margin-left: auto;
+			margin-right: auto;
+
+			background-color: $background-2;
+			box-shadow: $drop-shadow;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+
+			svg {
+				width: 3.125rem;
+				height: 2.25rem;
+			}
+		}
+	}
+
+	.body {
+		position: relative;
+		bottom: 4.5rem;
+		h3 {
+			text-align: center;
+			margin-bottom: 1rem;
+			color: $text-color;
+
+			transition: 1s;
+			cursor: pointer;
+			&:hover {
+				color: $primary-default;
+				text-shadow: $neon;
+			}
+		}
+
+		.counters {
+			display: flex;
+			justify-content: space-around;
+
+			div {
+				.shadow {
+					box-shadow: $inner-shadow;
+					width: 6.25rem;
+					height: 4.688rem;
+					border-radius: 0.5rem;
+
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+
+					.numberContainer {
+						box-shadow: $drop-shadow;
+						width: 5rem;
+						height: 3.75rem;
+						background-color: $background-2;
+						border-radius: 0.5rem;
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+
+						p {
+							text-align: center;
+							font-weight: 300;
+							font-size: 2.625rem;
+							line-height: 3.125rem;
+						}
+					}
+				}
+			}
+		}
+
+		p {
+			margin-top: 0.25rem;
+			text-align: center;
+			color: $text-color;
+
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.375rem;
+		}
+	}
+
+	.footer {
+		position: relative;
+		bottom: 2.5rem;
+
+		width: 100%;
+		display: inline-flex;
+		justify-content: flex-end;
+		a {
+			color: $primary-default;
+			transition: 1s;
+			&:hover {
+				text-shadow: $neon;
+			}
+			cursor: pointer;
+		}
+	}
+}
