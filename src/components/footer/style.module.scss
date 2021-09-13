@@ -1,0 +1,57 @@
+@import "../../styles/global.scss";
+.footerContainer {
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 1rem;
+	margin-top: 5rem;
+
+	p {
+		color: $text-color;
+
+		font-weight: 600;
+		font-size: 0.85rem;
+		line-height: 1.125rem;
+	}
+
+	.heartIcon {
+		width: 1.3rem;
+		height: 1.3rem;
+		margin: 0 0.5rem;
+		color: #ce0909;
+
+		transition: 0.5s;
+		cursor: pointer;
+
+		&:hover {
+			color: $primary-default;
+			filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+		}
+	}
+
+	.logoIcon {
+		width: 4rem;
+		height: 4rem;
+		margin-left: 0.5rem;
+
+		cursor: pointer;
+	}
+
+	.githubIcon,
+	.linkedinIcon {
+		color: $text-color;
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+		margin-right: 1rem;
+		position: relative;
+		left: 25rem;
+		transition: 1s;
+		&:hover {
+			color: $primary-default;
+			filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+		}
+	}
+}
