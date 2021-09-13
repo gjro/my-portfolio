@@ -3,7 +3,7 @@ import img from "../../assets/img/img.png";
 
 function AboutMe() {
 	return (
-		<div className={styles.container}>
+		<div id="aboutMe" className={styles.container}>
 			<div className={styles.left}>
 				<img draggable="false" src={img} alt="logo" />
 			</div>

@@ -4,7 +4,7 @@ import Email from "../../iconComponents/EmailIcon";
 
 function AboutMe() {
 	return (
-		<div className={styles.contactContainer}>
+		<div id="contact" className={styles.contactContainer}>
 			<h2 className={styles.subtitle}>Contact</h2>
 			<hr />
 

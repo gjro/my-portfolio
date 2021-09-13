@@ -31,7 +31,7 @@ function Card(props) {
 				</div>
 			</div>
 			<div className={styles.footer}>
-				<a>see more |{"->"}</a>
+				<a href="#">see more |{"->"}</a>
 			</div>
 		</div>
 	);

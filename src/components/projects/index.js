@@ -3,7 +3,7 @@ import Card from "./card";
 
 function Projects() {
 	return (
-		<div className={styles.projectsContainer}>
+		<div id="projects" className={styles.projectsContainer}>
 			<h2 className={styles.subtitle}>Projects</h2>
 			<hr />
 			<div className={styles.cardsContainer}>

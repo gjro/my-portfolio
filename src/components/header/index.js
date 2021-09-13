@@ -4,22 +4,22 @@ import Logo from "../../iconComponents/LogoIcon";
 function Header() {
 	return (
 		<header className={styles.headerContainer}>
-			<a href="">
+			<a href="#aboutMe">
 				<Logo className={styles.logo} />
 			</a>
 			<nav className={styles.menu}>
 				<ul>
 					<li>
-						<a href="#">About me</a>
+						<a href="#aboutMe">About me</a>
 					</li>
 					<li>
-						<a href="#">Projects</a>
+						<a href="#projects">Projects</a>
 					</li>
 					<li>
-						<a href="#">Skills</a>
+						<a href="#skills">Skills</a>
 					</li>
 					<li>
-						<a className={styles.contact} href="#">
+						<a className={styles.contact} href="#contact">
 							Contact
 						</a>
 					</li>
