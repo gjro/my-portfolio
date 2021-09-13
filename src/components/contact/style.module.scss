@@ -1,0 +1,109 @@
+@import "../../styles/global.scss";
+.contactContainer {
+	display: flex;
+	width: 100%;
+	padding: 5rem 0;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		text-align: center;
+		color: $text-color;
+	}
+
+	hr {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.formContainer {
+		width: 48rem;
+		width: 51.5rem;
+		box-shadow: $drop-shadow;
+		background-color: $background-2;
+		padding: 2.5rem;
+		border-radius: 0.625rem;
+
+		label {
+			color: $text-color;
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.375rem;
+		}
+
+		.inputContainer {
+			display: flex;
+			input {
+				border: none;
+				width: 95%;
+				height: 2.5rem;
+				background-color: $background-2;
+				box-shadow: $inner-shadow;
+				border-radius: 0 0.625rem 0.625rem 0;
+				padding: 0 0.5rem;
+
+				color: $text-color;
+				font-weight: normal;
+				font-size: 0.85rem;
+				line-height: 1.125rem;
+
+				&:focus-visible {
+					outline: none;
+				}
+			}
+
+			.iconContainer {
+				border: 1px $background-1 solid;
+				border-radius: 0.625rem 0 0 0.625rem;
+				display: flex;
+				width: 5%;
+				align-items: center;
+				justify-content: space-around;
+			}
+		}
+
+		input.button {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2.5rem;
+
+			border: none;
+			height: 3rem;
+			width: 15rem;
+			border-radius: 0.5rem;
+			background-color: $primary-dark;
+			box-shadow: $drop-shadow;
+			color: $text-color;
+			cursor: pointer;
+			transition: 1s;
+
+			font-weight: 600;
+			font-size: 0.85rem;
+			line-height: 1.125rem;
+
+			&:hover {
+				box-shadow: $neon;
+			}
+		}
+
+		input {
+			padding: 0 0.5rem;
+			border: none;
+			width: 100%;
+			height: 6.25rem;
+			background-color: $background-2;
+			box-shadow: $inner-shadow;
+			border-radius: 0.625rem;
+
+			color: $text-color;
+			font-weight: normal;
+			font-size: 0.85rem;
+			line-height: 1.125rem;
+
+			&:focus-visible {
+				outline: none;
+			}
+		}
+	}
+}

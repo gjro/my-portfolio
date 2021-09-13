@@ -5,7 +5,7 @@ function Card(props) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.iconContainer}>
-				<div className={styles.icon}>
+				<div className={styles.skillIcon}>
 					<Javascript />
 				</div>
 			</div>

@@ -5,6 +5,7 @@ import Destaque from "./components/destaque";
 import AboutMe from "./components/about-me";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
+import Contact from "./components/contact";
 import "./styles/global.scss";
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
 		<AboutMe />
 		<Projects />
 		<Skills />
+		<Contact />
 	</React.StrictMode>,
 	document.getElementById("root")
 );
