@@ -11,9 +11,12 @@ export default function Footer() {
 			<Heart className={styles.heartIcon} />
 			<p>by</p>
 			<Logo className={styles.logoIcon} />
-
-			<Github className={styles.githubIcon} />
-			<Linkedin className={styles.linkedinIcon} />
+			<a target="_blank" href="https://github.com/gjro">
+				<Github className={styles.githubIcon} />
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/in/gjrro/">
+				<Linkedin className={styles.linkedinIcon} />
+			</a>
 		</footer>
 	);
 }

@@ -29,13 +29,14 @@
 			font-weight: 600;
 			font-size: 1rem;
 			line-height: 1.375rem;
+			margin-left: 0.5rem;
 		}
 
 		.inputContainer {
 			display: flex;
 			input {
 				border: none;
-				width: 95%;
+				width: 100%;
 				height: 2.5rem;
 				background-color: $background-2;
 				box-shadow: $inner-shadow;
@@ -91,7 +92,7 @@
 		input {
 			padding: 0 0.5rem;
 			border: none;
-			width: 100%;
+			width: 98%;
 			height: 6.25rem;
 			background-color: $background-2;
 			box-shadow: $inner-shadow;

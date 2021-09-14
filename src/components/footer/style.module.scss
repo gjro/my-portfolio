@@ -39,19 +39,21 @@
 		cursor: pointer;
 	}
 
-	.githubIcon,
-	.linkedinIcon {
-		color: $text-color;
-		width: 2rem;
-		height: 2rem;
-		cursor: pointer;
-		margin-right: 1rem;
-		position: relative;
+	a {
 		left: 25rem;
-		transition: 1s;
-		&:hover {
-			color: $primary-default;
-			filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+		position: relative;
+		.githubIcon,
+		.linkedinIcon {
+			color: $text-color;
+			width: 2rem;
+			height: 2rem;
+			cursor: pointer;
+			margin-right: 1rem;
+			transition: 1s;
+			&:hover {
+				color: $primary-default;
+				filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+			}
 		}
 	}
 }
