@@ -11,10 +11,14 @@ export default function Footer() {
 			<Heart className={styles.heartIcon} />
 			<p>by</p>
 			<Logo className={styles.logoIcon} />
-			<a target="_blank" href="https://github.com/gjro">
+			<a target="_blank" rel="noreferrer" href="https://github.com/gjro">
 				<Github className={styles.githubIcon} />
 			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/gjrro/">
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.linkedin.com/in/gjrro/"
+			>
 				<Linkedin className={styles.linkedinIcon} />
 			</a>
 		</footer>
