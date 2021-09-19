@@ -4,9 +4,17 @@ import Logo from "../../iconComponents/LogoIcon";
 function Header() {
 	return (
 		<header className={styles.headerContainer}>
-			<a href="#aboutMe">
-				<Logo className={styles.logo} />
-			</a>
+			<div>
+				<a href="#aboutMe">
+					<Logo className={styles.logo} />
+				</a>
+			</div>
+			<div className={`${styles.menuContaier} ${styles.on}`}></div>
+			<div className={styles.menuToggle}>
+				<div className={styles.row1}></div>
+				<div className={styles.row2}></div>
+				<div className={styles.row3}></div>
+			</div>
 			<nav className={styles.menu}>
 				<ul>
 					<li>

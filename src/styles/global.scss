@@ -107,10 +107,59 @@ a {
 	line-height: 1rem;
 }
 
+html {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 body {
+	display: initial;
 	background-color: $background-1;
-	padding: 0 3.125rem;
 	font-family: Poppins;
+}
+
+@media (max-width: 1440px) {
+	:root {
+		font-size: 100%;
+	}
+
+	html {
+		padding: 0 5rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	:root {
+		font-size: 93.75%;
+	}
+	html {
+		padding: 0 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		font-size: 87.5%;
+	}
+	html {
+		padding: 0 1.5rem;
+	}
+}
+
+@media (max-width: 425px) {
+	:root {
+		font-size: 75%;
+	}
+	html {
+		padding: 0 1rem;
+	}
+}
+
+@media (max-width: 320px) {
+	:root {
+		font-size: 62.5%;
+	}
 }
 
 ::-webkit-scrollbar {
@@ -128,28 +177,4 @@ body {
 
 html {
 	scroll-behavior: smooth;
-}
-
-@media only screen and (max-width: 1440px) {
-	html {
-		font-size: 100%;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	html {
-		font-size: 93.75%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	html {
-		font-size: 87.5%;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	html {
-		font-size: 81.25%;
-	}
 }

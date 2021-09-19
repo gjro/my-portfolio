@@ -17,8 +17,7 @@
 	}
 
 	.formContainer {
-		width: 48rem;
-		width: 51.5rem;
+		width: 60%;
 		box-shadow: $drop-shadow;
 		background-color: $background-2;
 		padding: 2.5rem;
@@ -107,5 +106,15 @@
 				outline: none;
 			}
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.formContainer {
+		width: 75% !important;
+	}
+
+	.iconContainer {
+		width: 7.5% !important;
 	}
 }
