@@ -1,11 +1,15 @@
 import styles from "./style.module.scss";
 import Logo from "../../iconComponents/LogoIcon";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function Header() {
+	const [toggle, setToggle] = useState("false");
 	const menuContainerRef = useRef(null);
 	function handleToggle() {
-		menuContainerRef.current.classList.toggle(styles.on);
+		menuContainerRef.current.classList.toggle(styles.on, toggle);
+		setToggle(!toggle);
+
+		document.body.style.overflow = toggle ? "hidden" : "initial";
 	}
 
 	return (
