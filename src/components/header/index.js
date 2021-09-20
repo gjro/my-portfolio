@@ -19,10 +19,7 @@ function Header() {
 					<Logo className={styles.logo} />
 				</a>
 			</div>
-			<div
-				ref={menuContainerRef}
-				className={`${styles.menuContainer} ${styles.on}`}
-			>
+			<div ref={menuContainerRef} className={styles.menuContainer}>
 				<div onClick={handleToggle} className={styles.menuToggle}>
 					<div className={styles.row1}></div>
 					<div className={styles.row2}></div>
