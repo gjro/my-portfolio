@@ -1,9 +1,11 @@
 import styles from "./style.module.scss";
 import Logo from "../../iconComponents/LogoIcon";
+import { useRef } from "react";
 
 function Header() {
+	const menuContainerRef = useRef(null);
 	function handleToggle() {
-		console.log("toggle");
+		menuContainerRef.current.classList.toggle(styles.on);
 	}
 
 	return (
@@ -13,7 +15,10 @@ function Header() {
 					<Logo className={styles.logo} />
 				</a>
 			</div>
-			<div className={`${styles.menuContainer} ${styles.on}`}>
+			<div
+				ref={menuContainerRef}
+				className={`${styles.menuContainer} ${styles.on}`}
+			>
 				<div onClick={handleToggle} className={styles.menuToggle}>
 					<div className={styles.row1}></div>
 					<div className={styles.row2}></div>
