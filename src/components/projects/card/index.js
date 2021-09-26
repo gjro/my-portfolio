@@ -4,6 +4,26 @@ import Archive from "../../../iconComponents/ArchiveIcon";
 import Github from "../../../iconComponents/GithubIcon";
 import Exern from "../../../iconComponents/ExternIcon";
 function Card(props) {
+	function getGithub(asGithub) {
+		if (asGithub) {
+			return (
+				<a target="_blank" rel="noreferrer" href={props.github}>
+					<Github className={styles.icon} />
+				</a>
+			);
+		}
+	}
+
+	function getExtern(asExtern) {
+		if (asExtern) {
+			return (
+				<a target="_blank" rel="noreferrer" href={props.extern}>
+					<Exern className={styles.icon} />
+				</a>
+			);
+		}
+	}
+
 	return (
 		<div className={styles.card}>
 			<div className={styles.icons}>
@@ -11,8 +31,8 @@ function Card(props) {
 					<Archive width="3.75rem" height="3.438rem" />
 				</div>
 				<div>
-					<Github className={styles.icon} />
-					<Exern className={styles.icon} />
+					{getGithub(props.asGithub)}
+					{getExtern(props.asExtern)}
 				</div>
 			</div>
 			<div className={styles.body}>

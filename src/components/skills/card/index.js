@@ -1,13 +1,10 @@
 import React from "react";
 import styles from "./style.module.scss";
-import Javascript from "../../../iconComponents/JavascriptIcon";
 function Card(props) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.iconContainer}>
-				<div className={styles.skillIcon}>
-					<Javascript />
-				</div>
+				<div className={styles.skillIcon}>{props.logo}</div>
 			</div>
 			<div className={styles.body}>
 				<h3>{props.title}</h3>
@@ -15,7 +12,7 @@ function Card(props) {
 					<div className={styles.projectsCount}>
 						<div className={styles.shadow}>
 							<div className={styles.numberContainer}>
-								<p>10</p>
+								<p>{props.projects}</p>
 							</div>
 						</div>
 						<p>Projects</p>
@@ -23,7 +20,7 @@ function Card(props) {
 					<div className={styles.hoursCount}>
 						<div className={styles.shadow}>
 							<div className={styles.numberContainer}>
-								<p>10</p>
+								<p>{props.hours}</p>
 							</div>
 						</div>
 						<p>Hours</p>
@@ -31,7 +28,7 @@ function Card(props) {
 				</div>
 			</div>
 			<div className={styles.footer}>
-				<a href="#skills">see more |{"->"}</a>
+				<a href="#skills">see more |{">"}</a>
 			</div>
 		</div>
 	);
