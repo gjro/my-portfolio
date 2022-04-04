@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Destaque from "./components/destaque";
 import AboutMe from "./components/about-me";
+import Works from "./components/my-works";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
@@ -14,6 +15,7 @@ ReactDOM.render(
 		<Header />
 		<Destaque />
 		<AboutMe />
+		<Works />
 		<Projects />
 		<Skills />
 		<Contact />

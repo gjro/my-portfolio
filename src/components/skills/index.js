@@ -16,8 +16,18 @@ function Skills() {
 					projects="?"
 					hours="?"
 				/>
-				<Card logo={<CSS />} title="CSS 3" projects="?" hours="?" />
-				<Card logo={<HTML />} title="HTML 5" projects="?" hours="?" />
+				<Card
+					logo={<Javascript />}
+					title="Javascript"
+					projects="?"
+					hours="?"
+				/>
+				<Card
+					logo={<Javascript />}
+					title="Javascript"
+					projects="?"
+					hours="?"
+				/>
 			</div>
 		</div>
 	);

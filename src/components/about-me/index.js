@@ -1,11 +1,11 @@
 import styles from "./style.module.scss";
-import img from "../../assets/img/img.png";
+import me from "../../assets/img/about-me.png";
 
 function AboutMe() {
 	return (
 		<div id="aboutMe" className={styles.container}>
 			<div className={styles.left}>
-				<img draggable="false" src={img} alt="logo" />
+				<img draggable="false" src={me} alt="logo" />
 			</div>
 			<div className={styles.right}>
 				<h2 className={styles.subtitle}>About me</h2>

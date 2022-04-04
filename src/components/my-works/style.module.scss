@@ -1,0 +1,19 @@
+@import "../../styles/global.scss";
+
+.container {
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	width: 100%;
+
+	h2 {
+		text-align: center;
+		color: $text-color;
+	}
+
+	hr {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

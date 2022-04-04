@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Archive from "../../../iconComponents/ArchiveIcon";
 import Github from "../../../iconComponents/GithubIcon";
-import Exern from "../../../iconComponents/ExternIcon";
+import Extern from "../../../iconComponents/ExternIcon";
 function Card(props) {
 	function getGithub(asGithub) {
 		if (asGithub) {
@@ -18,7 +18,7 @@ function Card(props) {
 		if (asExtern) {
 			return (
 				<a target="_blank" rel="noreferrer" href={props.extern}>
-					<Exern className={styles.icon} />
+					<Extern className={styles.icon} />
 				</a>
 			);
 		}
