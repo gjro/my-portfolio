@@ -11,9 +11,6 @@ const FirstTab = () => {
 					<p>Ago 2018 - Jun 2022</p>
 				</div>
 				<hr />
-				<a target="_blank" rel="noreferrer">
-					<Extern className={styles.icon} />
-				</a>
 			</div>
 			<div className={styles.contentBody}>
 				<div className={styles.assignment}>

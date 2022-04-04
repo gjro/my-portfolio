@@ -1,0 +1,56 @@
+@import "../../../styles/global.scss";
+
+.container {
+	display: flex;
+	position: fixed;
+	left: 1.75rem;
+	bottom: -1rem;
+	z-index: 10;
+	flex-direction: column;
+	align-items: center;
+
+	ul {
+		li {
+			list-style: none;
+			margin: 1rem 0;
+			a {
+				.githubIcon,
+				.linkedinIcon {
+					text-align: center;
+					color: $text-color;
+					width: 1.75rem;
+					height: 1.75rem;
+					cursor: pointer;
+					transition: 1s;
+					&:hover {
+						color: $primary-default;
+						filter: drop-shadow(
+							1px 1px 5px rgba(76, 140, 74, 0.25)
+						);
+					}
+				}
+			}
+		}
+	}
+	hr {
+		background-color: $text-color;
+		box-shadow: $drop-shadow;
+		width: 0.35rem;
+		height: 5rem;
+		margin: 0;
+		cursor: pointer;
+		transition: 1s;
+
+		&:hover {
+			background-color: $primary-default;
+			box-shadow: $drop-shadow;
+			height: 7.5rem;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.container {
+		display: none;
+	}
+}

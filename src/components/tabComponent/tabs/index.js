@@ -2,20 +2,12 @@ import React, { useState } from "react";
 import FirstTab from "./allTabs/firstTab";
 import SecondTab from "./allTabs/secondTab";
 import ThirdTab from "./allTabs/thirdTab";
-import FourthTab from "./allTabs/fourthTab";
-import FifthTab from "./allTabs/fifthTab";
 import styles from "./style.module.scss";
 
 const Tabs = () => {
 	const [activeTab, setActiveTab] = useState(0);
 
-	const tabs = [
-		<FirstTab />,
-		<SecondTab />,
-		<ThirdTab />,
-		<FourthTab />,
-		<FifthTab />,
-	];
+	const tabs = [<FirstTab />, <SecondTab />, <ThirdTab />];
 
 	const handleTab1 = () => {
 		setActiveTab(0);
@@ -27,12 +19,6 @@ const Tabs = () => {
 
 	const handleTab3 = () => {
 		setActiveTab(2);
-	};
-	const handleTab4 = () => {
-		setActiveTab(3);
-	};
-	const handleTab5 = () => {
-		setActiveTab(4);
 	};
 
 	return (
@@ -62,22 +48,6 @@ const Tabs = () => {
 						onClick={handleTab3}
 					>
 						Womaneer
-					</li>
-					<li
-						className={
-							activeTab === 3 ? styles.active : styles.inactive
-						}
-						onClick={handleTab4}
-					>
-						Learning Lab
-					</li>
-					<li
-						className={
-							activeTab === 4 ? styles.active : styles.inactive
-						}
-						onClick={handleTab5}
-					>
-						Corona Info
 					</li>
 				</ul>
 			</div>

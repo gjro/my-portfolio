@@ -5,14 +5,20 @@
 	column-gap: 1rem;
 
 	.left {
+		align-self: center;
+		height: fit-content;
+		padding: 1rem 0;
 		width: 25%;
+		display: flex;
+		justify-content: center;
+		align-content: space-around;
 		background-color: $background-2;
 		box-shadow: $inner-shadow;
 		border-radius: 10px;
 
 		ul {
-			height: 100%;
 			display: flex;
+			gap: 1rem;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-evenly;
@@ -60,12 +66,14 @@
 
 	.right {
 		width: 75%;
+		min-height: 30rem;
 		background-color: $background-2;
 		box-shadow: $inner-shadow;
 		border-radius: 10px;
 		padding: 2rem;
 
 		.contentContainer {
+			min-height: 30rem;
 			border-radius: 10px;
 			box-shadow: $drop-shadow;
 			padding: 2rem;
@@ -151,15 +159,34 @@
 }
 
 @media (max-width: 425px) {
-	.container {
+	.tabs {
 		flex-direction: column;
-
+		align-items: center;
+		gap: 1rem;
 		.left {
 			width: 100%;
+			overflow: auto;
+			justify-content: flex-start;
+
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+			ul {
+				flex-direction: row;
+				padding: 0 1rem;
+			}
 		}
 
 		.right {
 			width: 100%;
+
+			.contentContainer {
+				.contentHeader {
+					gap: 1rem;
+					flex-direction: column;
+				}
+			}
 
 			p {
 				text-align: center;

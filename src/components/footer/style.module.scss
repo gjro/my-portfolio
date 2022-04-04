@@ -58,3 +58,11 @@
 		}
 	}
 }
+
+@media screen and (min-width: 425px) {
+	.footerContainer {
+		a {
+			display: none;
+		}
+	}
+}

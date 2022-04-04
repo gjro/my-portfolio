@@ -11,9 +11,6 @@ const SecondTab = () => {
 					<p>Set 2021 - Mar 2022</p>
 				</div>
 				<hr />
-				<a target="_blank" rel="noreferrer">
-					<Extern className={styles.icon} />
-				</a>
 			</div>
 			<div className={styles.contentBody}>
 				<div className={styles.assignment}>
@@ -55,9 +52,11 @@ const SecondTab = () => {
 			<div className={styles.contentFooter}>
 				<h4>Skills Desenvolvidas</h4>
 				<div className={styles.skills}>
-					<span> Tecnologia 1</span>
-					<span> Tecnologia 2</span>
-					<span> Tecnologia 3</span>
+					<span>Comunicação Assertiva</span>
+					<span>Abordagem Consultiva</span>
+					<span>Scrum</span>
+					<span>Kanban</span>
+					<span>Agile</span>
 				</div>
 			</div>
 		</div>
