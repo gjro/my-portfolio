@@ -164,13 +164,18 @@
 		align-items: center;
 		gap: 1rem;
 		.left {
-			width: 100%;
+			width: 90%;
 			overflow: auto;
 			justify-content: flex-start;
 
 			&::-webkit-scrollbar {
-				width: 0;
-				height: 0;
+				height: 0.2rem;
+			}
+			&::-webkit-scrollbar-button {
+				width: 1rem;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: $background-2;
 			}
 			ul {
 				flex-direction: row;
@@ -179,7 +184,7 @@
 		}
 
 		.right {
-			width: 100%;
+			width: 85%;
 
 			.contentContainer {
 				.contentHeader {
