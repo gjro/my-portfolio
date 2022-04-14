@@ -4,7 +4,9 @@ function RightContent() {
 	return (
 		<div id="rightContent" className={styles.container}>
 			<ul>
-				<a>gilbertojr.ro@gmail.com</a>
+				<a href="mailto:gilbertojr.ro@gmail.com">
+					gilbertojr.ro@gmail.com
+				</a>
 			</ul>
 			<hr />
 		</div>
