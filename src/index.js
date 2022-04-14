@@ -21,7 +21,7 @@ ReactDOM.render(
 		<AboutMe />
 		<Works />
 		<Projects />
-		<Skills />
+		{/* <Skills /> */}
 		<Contact />
 		<Footer />
 	</React.StrictMode>,
