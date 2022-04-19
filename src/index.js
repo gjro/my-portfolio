@@ -12,18 +12,20 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import "./styles/global.scss";
 
-ReactDOM.render(
-	<React.StrictMode>
-		<Header />
-		<Left />
-		<Right />
-		<Destaque />
-		<AboutMe />
-		<Works />
-		<Projects />
-		{/* <Skills /> */}
-		<Contact />
-		<Footer />
-	</React.StrictMode>,
-	document.getElementById("root")
-);
+setTimeout(() => {
+	ReactDOM.render(
+		<React.StrictMode>
+			<Header />
+			<Left />
+			<Right />
+			<Destaque />
+			<AboutMe />
+			<Works />
+			<Projects />
+			{/* <Skills /> */}
+			<Contact />
+			<Footer />
+		</React.StrictMode>,
+		document.getElementById("root")
+	);
+}, 4800);

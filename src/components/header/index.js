@@ -1,5 +1,5 @@
 import styles from "./style.module.scss";
-import Logo from "../../iconComponents/LogoIcon";
+import Logo from "../../iconComponents/LogoBlock";
 import { useRef, useState } from "react";
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
 	return (
 		<header className={styles.headerContainer}>
 			<div>
-				<a href="#aboutMe">
+				<a className={styles.logoIcon} href="">
 					<Logo className={styles.logo} />
 				</a>
 			</div>

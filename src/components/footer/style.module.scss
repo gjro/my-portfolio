@@ -32,12 +32,18 @@
 		}
 	}
 
-	.logoIcon {
+	.logo {
 		width: 4rem;
 		height: 4rem;
 		margin-left: 0.5rem;
-
+		color: $text-color;
 		cursor: pointer;
+		transition: 1s;
+
+		&:hover {
+			color: $primary-default;
+			filter: drop-shadow(1px 1px 5px rgba(76, 140, 74, 0.25));
+		}
 	}
 
 	a {

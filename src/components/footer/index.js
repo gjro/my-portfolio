@@ -1,5 +1,5 @@
 import styles from "./style.module.scss";
-import Logo from "../../iconComponents/LogoIcon";
+import Logo from "../../iconComponents/LogoInline";
 import Heart from "../../iconComponents/HeartIcon";
 import Github from "../../iconComponents/GithubIcon";
 import Linkedin from "../../iconComponents/LinkedinIcon";
@@ -10,7 +10,7 @@ export default function Footer() {
 			<p>Developed with a lot of</p>
 			<Heart className={styles.heartIcon} />
 			<p>by</p>
-			<Logo className={styles.logoIcon} />
+			<Logo className={styles.logo} />
 
 			<a target="_blank" rel="noreferrer" href="https://github.com/gjro">
 				<Github className={styles.githubIcon} />
