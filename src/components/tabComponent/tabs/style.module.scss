@@ -73,6 +73,10 @@
 		padding: 2rem;
 
 		.contentContainer {
+			flex-direction: column;
+			display: flex;
+			justify-content: space-around;
+
 			min-height: 30rem;
 			border-radius: 10px;
 			box-shadow: $drop-shadow;
